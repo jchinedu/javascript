@@ -21,5 +21,5 @@ console.log(array[counter])
 }while(counter < array.length){
  //console.log(array[counter])
  //counter++
-};
+ };
 

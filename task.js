@@ -2,7 +2,7 @@ const person = {
  name : "Chinedu",
  age : 16,
  gender : "sheMale",
- password: "34567"
+ password: "34567" 
 }; 
 person.color ="black"; 
 person.password = "newpassword1234";
