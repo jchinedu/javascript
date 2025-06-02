@@ -1,6 +1,8 @@
 const prompt = require("prompt-sync")();         
 	let totalQuestions = 10;
         let score = 0;
+	const time = Date.now();
+	const timetaken = (Date.now()/1000 - time).toFixed(2)
         console.log("Subtraction Quiz: You have " + totalQuestions + " questions!");
 
         for (let i = 1; i <= totalQuestions; i++) {
@@ -30,4 +32,5 @@ const prompt = require("prompt-sync")();
         }
 
         console.log("\nYour final score: " + score + " out of " + totalQuestions );
-	 
+	console.log(`total time taken is: ${timetaken} second`);
+ 
