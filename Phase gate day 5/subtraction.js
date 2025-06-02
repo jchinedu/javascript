@@ -1,7 +1,6 @@
-const prompt = require("prompt-sync")();        
+const prompt = require("prompt-sync")();         
 	let totalQuestions = 10;
         let score = 0;
-
         console.log("Subtraction Quiz: You have " + totalQuestions + " questions!");
 
         for (let i = 1; i <= totalQuestions; i++) {
@@ -18,6 +17,7 @@ const prompt = require("prompt-sync")();
 		console.log('you have one more chance')
 		console.log("Question " + i + ": What is " + max + " - " + min + "? ");
             let userAnswer = Number(prompt('enter the answer: ').trim());
+	      
 	      }
 		
 
@@ -29,5 +29,5 @@ const prompt = require("prompt-sync")();
             }
         }
 
-        console.log("\nYour final score: " + score + " out of " + totalQuestions);
- 
+        console.log("\nYour final score: " + score + " out of " + totalQuestions );
+	 
