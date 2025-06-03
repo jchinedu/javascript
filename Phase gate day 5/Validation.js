@@ -36,6 +36,7 @@ if(cardnumber[0] == 3 && cardnumber.length == 15) return Discover;
 else if(cardnumber[0] == 3 && cardnumber.length != 15) return invalid;
 };
 
+
 firstnum = [1,2,3,4,5,6,7,8,9,3,5,6,7,8,6];
 secondnum = [2,2,3,4,5,6,7,8,9,3,5,6,7,8,6];
 thirdnum = [3,2,3,4,5,6,7,8,9,3,5,6,7,8,6];
