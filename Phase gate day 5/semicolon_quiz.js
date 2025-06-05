@@ -82,7 +82,7 @@ function askQuestion(questionObj) {
   }
 
   for (let trial = 1; trial <= 2; trial++) {
-    let answer = prompt("Your answer (A-D) - Attempt " + trial + ": ").toUpperCase();
+    let answer = prompt("Your answer (A-D)" + trial + ": ").toUpperCase();
     if (answer === questionObj.answer) {
       console.log(" Correct!");
       return true;
@@ -109,7 +109,7 @@ function playQuiz() {
     }
 
     console.log("\nAvailable question numbers: [" + available.join(", ") + "]");
-    let input = prompt("Choose a question number to answer (or 0 to quit): ");
+    let input = prompt("Choose a question number to answer or 0 to quit): ");
     let num = parseInt(input);
 
     if (num === 0) {
