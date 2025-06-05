@@ -19,7 +19,7 @@ do{
 console.log(array[counter])
  counter++
 }while(counter < array.length){
- //console.log(array[counter])
+ //console.log(array[counter]) 
  //counter++
  };
 
