@@ -1,0 +1,4 @@
+function Bug_Clearing_App(scores[]){
+    let clean = [];
+    
+}

@@ -34,7 +34,7 @@ function find_the_smallest_number_whose_digits_multiply_to_given_product(number)
             let VaLUE1 = i.toString();
             let VALUE2 = j.toString();
             output = VALUE2 + VaLUE1;
-            break;
+            break; 
         }
     }
 }
@@ -43,7 +43,7 @@ function find_the_smallest_number_whose_digits_multiply_to_given_product(number)
      
     
 }
-console.log(find_the_smallest_number_whose_digits_multiply_to_given_product(36))
+//console.log(find_the_smallest_number_whose_digits_multiply_to_given_product(36))
 
 
 function find_the_Armstrong(number){
@@ -63,5 +63,5 @@ if(total === result ) return true
 return false
 }
 
-//console.log(find_the_Armstrong(153));
+console.log(find_the_Armstrong(153));
 
