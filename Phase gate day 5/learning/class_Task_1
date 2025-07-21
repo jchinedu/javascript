@@ -1,0 +1,13 @@
+//call back function are bascially functions used as an arguement
+
+
+function HigherFunction(){
+    console.log("higher function")
+
+}
+
+function LowerFunction(CallBack){
+    console,log("lower function")
+    CallBack()
+}
+LowerFunction(HigherFunction)
