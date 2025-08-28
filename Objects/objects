@@ -1,0 +1,87 @@
+// 1) Student Object and 2) Student with Methods
+const student = {
+  name: "John Doe",
+  age: 22,
+  courses: ["Math", "Physics", "Computer Science"],
+  address: { city: "New York", zip: 10001 },
+};
+console.log("Student's Name:", student.name);              
+console.log("Second Course:", student.courses[1]);         
+console.log("Zip Code:", student.address.zip); 
+
+
+
+student.age = 23;
+student.GPA = 3.8;
+student.getDetails = function () {
+  return `${this.name} is ${this.age} years old and has a GPA of ${this.GPA}`;
+};
+console.log(student.getDetails());
+
+
+// 3) Bank Account
+const bankAccount = {
+  owner: "Alice",
+  balance: 500,
+  deposit(amount) {
+    this.balance += amount;
+    return this.balance;
+  },
+  withdraw(amount) {
+    if (this.balance - amount < 0) return false;
+    this.balance -= amount;
+    return true;
+  },
+};
+bankAccount.deposit(200);   
+bankAccount.withdraw(1000); 
+console.log("Final Balance:", bankAccount.balance);
+
+// 4) Inventory
+const inventory = {
+  apple: 10,
+  banana: 5,
+  orange: 8,
+  mango: 12,
+};
+let totalFruits = 0;
+for (let fruit in inventory) {
+  console.log(`${fruit}: ${inventory[fruit]}`);
+  totalFruits += inventory[fruit];
+}
+console.log("Total fruits:", totalFruits);
+
+// 5) Company
+const company = {
+  name: "TechCorp",
+  location: "San Francisco",
+  employees: [
+    { id: 1, name: "Alice", department: "Engineering" },
+    { id: 2, name: "Bob", department: "HR" },
+    { id: 3, name: "Charlie", department: "Marketing" },
+    { id: 4, name: "Diana", department: "Engineering" }
+  ]
+};
+console.log("Second employee:", company.employees[1].name);
+
+const { name: companyName, location } = company;
+console.log("Company Name:", companyName);
+console.log("Location:", location);
+
+for (let emp of company.employees) {
+  console.log(`${emp.name} works in ${emp.department}`);
+}
+
+// 6) Products
+const products = [
+  { id: 1, name: "Laptop", price: 1200 },
+  { id: 2, name: "Phone", price: 800 },
+  { id: 3, name: "Tablet", price: 500 },
+  { id: 4, name: "Desktop", price: 700 },
+];
+function findExpensiveProducts(products, threshold) {
+  return products.filter(product => product.price > threshold);
+}
+
+console.log("Expensive Products:", findExpensiveProducts(products, 700));
+module.exports = { student, bankAccount, inventory, company, products, findExpensiveProducts };
