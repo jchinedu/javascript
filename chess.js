@@ -9,3 +9,5 @@ for(let i = 0; i <= 7; i++){
 	space2 += "\n";
 }
 console.log(space2);
+
+

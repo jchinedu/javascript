@@ -1,5 +1,29 @@
 {
   "dependencies": {
+    "nodemon": "^3.1.10",
     "prompt-sync": "^4.2.0"
+  },
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "\"# javascript\"",
+  "main": "array.js",
+  "scripts": {
+    "nodemon": "function.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchinedu/javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jchinedu/javascript/issues"
+  },
+  "homepage": "https://github.com/jchinedu/javascript#readme",
+  "devDependencies": {
+    "jest": "^30.1.1"
   }
 }
