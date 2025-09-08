@@ -96,7 +96,7 @@ function askQuestion(qIndex) {
 
 function quiz() {
   let remainingQuestions = [...Array(10).keys()].map(x => x + 1);
-  let answered = [];
+  let answered = []; 
   let correct = 0;
   let missed = [];
 

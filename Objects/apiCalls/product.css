@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.navBarContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul li{
+    list-style: none; 
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 425px;
+    height: 420px;
+}
+.productContainer{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
