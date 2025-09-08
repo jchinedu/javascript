@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container .home {
+    padding: 10px 100px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+search {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+search input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+search input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+search #searchButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+search #searchButton:hover {
+    background-color: #298ef9;
+}
+search #searchButton:active {
+    background-color: #136dcd;
+}
+
+.product-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products-men {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+.products-men img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.products-men p {
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.products-men button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
